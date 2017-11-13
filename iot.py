@@ -14,8 +14,10 @@ def get_temp():
 
 def main():
     while True:
-        get_temp()
-        time.sleep(5)
+        message = input('Enter message to display: ')
+        sense.show_message(message)
+
+# temp_calibrated = temp - ((cpu_temp - temp)/5.466)
 
 
 if __name__ == '__main__':
